@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    <title>Contact Page - Responsive</title>
+</head>
+
+<body>
+
+    <!-- navbar form here  -->
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png.jpg" width="125px" />
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html"    style="--i:1" class="active"><b>Home</b></a></li>
+                <li><a href="products.html" style="--i:2" ><b>Products</b></a></li>
+                <li><a href="about.html"    style="--i:3" ><b>About</b></a></li>
+                <li><a href="contact.html"  style="--i:4" ><b>Contact</b></a></li>
+                <li><a href="account.html" style="--i:5" ><b>Account</b></a></li>
+            </ul>
+        </nav>
+        <a href="shop.html"><img class="carti" src="cart.png" style="--i:6" style="cursor: pointer;" width="30px" height="30px" /></a>
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()" />
+    </div>
+
+    <!----------- main code of contact page start form here  ------------->
+
+    <div class="contact-box">
+        <p class="title">Contact Us</p>
+        <p class="text" style="margin-top: -3rem; margin-bottom:1rem;"><b><i  style="--i:1">"Connect with Us for a Brighter Tomorrow!"</i></b><br><p class="text" style="--i:2"> 
+            We value your feedback and inquiries. Please fill out the form below to get in touch with us. your thoughts
+            and questions are important to us, and we strive to respond promptly.</p></p>
+        <div class="container">
+            <div class="info">
+                <div class="location" style="--i:1">
+                    <i class="fa-brands fa-telegram"></i>
+                    <p id="p1">Telegram Group link</p>
+                        <a href="https://t.me/+wzoihkYM-FU3MmNl" class="tl">https://t.me/+wzoihkYM-FU3MmNl</a>
+                </div>
+                <div class="email" style="--i:2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p id="p1">sarthakdnyane@email.com</p>
+                </div>
+                <div class="contact" style="--i:3">
+                    <i class="fa-solid fa-phone"></i>
+                    <p id="p1">+91 8888026923</p>
+                </div>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/mnnqjboe" method="POST">
+                <input style="--i:1" type="text" name="name" placeholder="Enter Your Name" required>
+                <input style="--i:2" type="email" name="email" placeholder="Enter Your Email" required>
+                <input style="--i:3" type="text" name="subject" placeholder="Enter Your Subject" required>
+                <textarea style="--i:4" rows="10" name="message" placeholder="Write Your Message" required></textarea>
+                <button style="--i:5" type="submit">Submit</button>
+            </form>
+</body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-box {
+        width: 90%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 5%;
+        background-color: #2f4f4f;
+        display: block;
+        border-radius: .5rem;
+        animation: floatImage 4s ease-in-out infinite;
+    }
+
+    #p1{
+        color: #fff;
+        margin-top: 1rem;
+    }
+
+    .tl{
+        color: #fff;
+        
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        padding-top: 40px;
+        cursor: default;
+        opacity: 0;
+        animation: slideRight 1s ease forwards;
+    }
+
+    .title:hover{
+        color:#fff;
+    }
+
+    .text {
+        color: #fff;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        opacity: 0;
+        cursor: default;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 0.1s;
+        animation-delay: calc(0.2s * var(--i));
+    }
+
+    .text  i {
+        transition: 0.5s ease;
+    }
+
+    .text  i:hover {
+        color: #00ffff;
+    }
+
+    .container {
+        width: 100%;
+        padding: 45px 150px;
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .info {
+        width: 50%;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        padding-top: 40px;
+    }
+
+    .info div {
+        background-color: #4c6868;
+        margin-bottom: 10px;
+        margin-right: 100px;
+        padding: 10px 10px;
+        text-align: center;
+        border-radius: .5rem;
+        transition: 0.5s ease;
+        transition: 0.3s;
+        opacity: 0;
+        animation: slideBottom 1s ease forwards;
+        animation-delay: calc(0.2s * var(--i));
+
+    }
+
+    .info div:hover {
+        background-color: #ff523b;
+        color: #fff;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px 10px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        border-radius: .5em;
+        transition: 0.5s;
+        opacity: 0;
+        animation: slideTop 0.8s ease forwards;
+        animation-delay: calc(0.2s * var(--i));
+    }
+
+    button {
+        border: none;
+        background-color: #ffb517;
+        padding: 8px 30px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        border-radius: 3px;
+        color: #2f4f4f;
+        transition: 0.5s ease;
+        border-radius: 5px;
+        transition: 0.5s;
+        opacity: 0;
+        animation: slideTop 0.8s ease forwards;
+        animation-delay: calc(0.2s * var(--i));
+    }
+
+    button:hover {
+        background-color: #4c6868;
+        color: #ffb517;
+        cursor: pointer;
+    }
+
+    /*        Responsive Making - Started for here by css                                                                               */
+
+    @media(max-width: 980px) {
+        .container {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            display: block;
+            box-sizing: border-box;
+            align-items: center;
+        }
+
+        .contact-box{
+            margin-top: 12rem;
+        }
+
+        .info {
+            width: 90%;
+            padding: 0;
+            margin-left: 2.5%;
+        }
+
+        .info div {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        form {
+            padding-top: 20px;
+            width: 90%;
+            display: block;
+            margin-left: 2.5%;
+            box-sizing: border-box;
+        }
+
+        input,
+        textarea {
+            padding: 6px 8px;
+            margin-top: .1rem;
+        }
+
+        button {
+            margin-bottom: 50px;
+        }
+    }
+
+
+    /* KEYFRAMES ANIMATION */
+    @keyframes slideRight {
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideTop {
+        0% {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        0% {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes floatImage {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-24px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+</style>
+
+
+    <!-- JS FILES -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <title>Product page  - Responsive</title>
+</head>
+
+<body>
+    <!-- navbar form here  -->
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png.jpg" width="125px" />
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html"    style="--i:1" class="active"><b>Home</b></a></li>
+                <li><a href="products.html" style="--i:2" ><b>Products</b></a></li>
+                <li><a href="about.html"    style="--i:3" ><b>About</b></a></li>
+                <li><a href="contact.html"  style="--i:4" ><b>Contact</b></a></li>
+                <li><a href="account.html" style="--i:5" ><b>Account</b></a></li>
+            </ul>
+        </nav>
+        <a href="shop.html"><img class="carti" src="cart.png" style="--i:6" style="cursor: pointer;" width="30px" height="30px" /></a>
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()" />
+    </div>
+
+    <div class="main">
+    <div class="title">
+        <h1 style="--i:1">Welcome to Our Product page</h1>
+    </div>
+    <div class="procont">
+            <h2 class="title" style="--i:2">Featured Products</h2>
+            <div class="row">
+                <div class="col-4" style="--i:1">
+                    <img src="https://images.meesho.com/images/products/387646385/vkuwz_512.webp">
+                    <h4>Engineered Wood Display...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        
+                    </div>
+                    <p>$11.93</p>
+                </div>
+                <div class="col-4" style="--i:2">
+                    <img src="https://images.meesho.com/images/products/436879497/pzgmp_512.webp">
+                    <h4>Trendy Study Table</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$5.97</p>
+                </div>
+                <div class="col-4" style="--i:3">
+                    <img src="https://images.meesho.com/images/products/392420352/v5hes_512.webp">
+                    <h4>Colorful Dustpan</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$9.47</p>
+                </div>
+                <div class="col-4" style="--i:4">
+                    <img src="https://images.meesho.com/images/products/400240941/kdzur_512.webp">
+                    <h4>Classic Bottle Rack</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$3.05</p>
+                </div>
+            </div>
+
+            <!-- 2nd Product Bar  -->
+
+            <h2 class="title" style="--i:3">Men Watches</h2>
+            <div class="row">
+                <div class="col-4" style="--i:5">
+                    <img src="https://images.meesho.com/images/products/400583921/kzocy_512.webp">
+                    <h4>Pebble Everyday S...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        
+                    </div>
+                    <p>$44.85</p>
+                </div>
+                <div class="col-4" style="--i:6">
+                    <img src="https://images.meesho.com/images/products/454029619/kt0dv_512.webp">
+                    <h4>Trendy Analog Watches</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$24.59</p>
+                </div>
+                <div class="col-4" style="--i:7">
+                    <img src="https://images.meesho.com/images/products/400589154/ba6iw_512.webp">
+                    <h4>Pebble Unique Sm...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$40.14</p>
+                </div>
+                <div class="col-4" style="--i:8">
+                    <img src="https://images.meesho.com/images/products/400588385/dv5bn_512.webp">
+                    <h4>Pebble Unique Sm...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>$36.29</p>
+                </div>
+            </div>
+
+            <!-- 3rd Product Bar -->
+
+            <h2 class="title" style="--i:4">Men T-shirts</h2>
+            <div class="row">
+                <div class="col-4" style="--i:9">
+                    <img src="https://images.meesho.com/images/products/306146005/p53jm_512.webp">
+                    <h4>Trendy Designer Men Ts...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        
+                    </div>
+                    <p>$2.97</p>
+                </div>
+                <div class="col-4" style="--i:9">
+                    <img src="https://images.meesho.com/images/products/356595847/sp5jn_512.webp">
+                    <h4>Pretty Ravishing Men Ts...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$2.89</p>
+                </div>
+                <div class="col-4"  style="--i:10">
+                    <img src="https://images.meesho.com/images/products/445105181/nmaci_512.webp">
+                    <h4>Men Cotton Blend Regul...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$3.44</p>
+                </div>
+                <div class="col-4"  style="--i:11">
+                    <img src="https://images.meesho.com/images/products/364641609/ldczy_512.webp">
+                    <h4>Stylish Retro Men T-shirts</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$2.83</p>
+                </div>
+            </div>
+
+            <!-- 4th Product Bar  -->
+
+            <h2 class="title" style="--i:5">Sports Shoes</h2>
+            <div class="row">
+                <div class="col-4"  style="--i:12">
+                    <img src="https://images.meesho.com/images/products/396947088/gwll7_512.webp">
+                    <h4>Relaxed Trendy Men Spo...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        
+                    </div>
+                    <p>$4.16</p>
+                </div>
+                <div class="col-4"  style="--i:13">
+                    <img src="https://images.meesho.com/images/products/321921789/guwhs_512.webp">
+                    <h4>Unique Fabulous Men Sp...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>$3.38</p>
+                </div>
+                <div class="col-4"  style="--i:14">
+                    <img src="https://images.meesho.com/images/products/181455546/xwglw_512.webp">
+                    <h4>Aadab Fabulous Men Sp...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$5.47</p>
+                </div>
+                <div class="col-4"  style="--i:15">
+                    <img src="https://images.meesho.com/images/products/450678766/lvjka_512.webp">
+                    <h4>Trendy Sports Shoes</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>$3.27</p>
+                </div>
+            </div>
+    </div>
+</div>
+</body>
+
+<style>
+    .procont{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .title{
+        transition: 0.5s ease;
+        transition: 0.3s;
+        opacity: 0;
+        cursor: default;
+        animation: slideRight 1s ease forwards;
+        animation-delay: 0.1s;
+        animation-delay: calc(0.2s * var(--i));
+    }
+
+    .col-4{
+        transition: 0.5s ease;
+        transition: 0.3s;
+        opacity: 0;
+        animation: slideBottom 1s ease forwards;
+        animation-delay: calc(0.2s * var(--i));
+    }
+
+    /* Responsive*/
+
+    @media(max-width: 980px){
+        .main{
+            margin-top: 12rem;
+        }
+    }
+</style>
+
+    <!-- JS FILES -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Page - Responsive</title>
+</head>
+
+<body>
+    <!-- navbar form here  -->
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png.jpg" width="125px" />
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html" style="--i:1" class="active"><b>Home</b></a></li>
+                <li><a href="products.html" style="--i:2"><b>Products</b></a></li>
+                <li><a href="about.html" style="--i:3"><b>About</b></a></li>
+                <li><a href="contact.html" style="--i:4"><b>Contact</b></a></li>
+                <li><a href="account.html" style="--i:5"><b>Account</b></a></li>
+            </ul>
+        </nav>
+        <a href="shop.html"><img class="carti" src="cart.png" style="--i:6" style="cursor: pointer;" width="30px"
+                height="30px" /></a>
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()" />
+    </div>
+
+    <!-- code of about page down side -->
+
+    <div class="about-cont">
+        <p class="title">About Us</p>
+        <p class="text" style="margin-top: -3rem; margin-bottom:1rem;"><b><i style="--i:1">Welcome to
+                    Cart-Craze!</i></b><br>
+        <p class="text" style="--i:2">
+            At Cart-Craze, we're more than just an online store—we're a community. Founded in 2024,
+            we started with a simple mission: to provide high-quality, unique products that make your life better and
+            more enjoyable.
+            Our journey began with a passion for handcrafted accessories, innovative gadgets,
+            sustainable fashion, and has since grown into a trusted source for customers around the world.</p>
+        </p>
+
+        <div class="our-values">
+            <h1>Our Values &#8628;</h1>
+            <div id="ov-box1" style="--i:1; background: #2f4f4f; color:white;">
+                <h2>Quality</h2>
+                <p> We believe in delivering only the best. Every product
+                    on our site is carefully curated and inspected to ensure
+                    it meets our high standards.</p>
+            </div>
+            <div id="ov-box2" style="--i:2; background: #2f4f4f; color:white;">
+                <h2>Innovation</h2>
+                <p>We are constantly seeking out the latest trends and
+                    innovations to bring you products that are not only
+                    useful but also ahead of the curve.</p>
+            </div>
+            <div id="ov-box3" style="--i:3; background: #2f4f4f; color:white;">
+                <h2>Sustainability</h2>
+                <p> We are committed to sustainability and ethical practices.
+                    Many of our products are sourced from eco-friendly materials
+                    and fair-trade suppliers.</p>
+            </div>
+        </div>
+
+        <div class="our-story">
+            <h1>Our Story &#8628;</h1>
+            <p>Our founder, Sarthak Datta Dnyane (CREATER), started this
+                journey with a dream to create an online
+                destination that offers more than just products.
+                Inspired by The CREATER,
+                Sarthak Datta Dnyane envisioned a store that is built on passion,
+                integrity, and customer satisfaction.</p>
+        </div>
+
+        <div class="meet-our-team">
+            <h1>Meet Our Team &#8628;</h1>
+            <p>We believe in the power of people.
+                Our dedicated team of professionals works
+                tirelessly to ensure you have the best shopping experience.
+                Each member brings their unique skills and passion to the table,
+                making CartCraze a place where creativity and innovation thrive.</p>
+        </div>
+
+        <div class="why-shop-with-us">
+            <h1>Why Shop With Us? &#8628;</h1>
+            <div class="wswus-box">
+                <h2>Exceptional Customer Service</h2>
+                <p>Our dedicated team is here to assist you every step of the way. 
+                    From product selection to post-purchase support, we are committed 
+                    to making your shopping experience seamless and enjoyable.
+                </p>
+            </div>
+            <div class="wswus-box">
+                <h2>Fast and Reliable Shipping</h2>
+                <p> We understand the excitement of receiving your order. 
+                    That's why we offer fast and reliable shipping options 
+                    to get your products to you as quickly as possible.</p>
+            </div>
+            <div class="wswus-box">
+                <h2>Customer Satisfaction Guarantee</h2>
+                <p>Your happiness is our top priority. If you're not completely 
+                    satisfied with your purchase, we offer easy returns and exchanges 
+                    to ensure you find exactly what you're looking for.</p>
+            </div>
+        </div>
+
+        <div class="join-our-community">
+            <h1>Join Our Community &#8628; </h1>
+            <p>We love staying connected with our customers.
+                Follow us on social media platforms for the latest updates, 
+                promotions, and exclusive content. Join our newsletter to receive 
+                special offers and stay informed about new arrivals.</p>
+        </div>
+
+        <div class="contact-us">
+            <h1>Contact Us &#8628;</h1>
+            <p>Have questions or need assistance? 
+                We're here to help! Reach out to us at 
+                Telegram or visit our contact page their your got Telegram link
+                for quick answers to common questions.</p><br>
+        </div>
+    </div>
+</body>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+
+    .about-cont {
+        width: 98%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 1%;
+        background-color: #ff5e00;
+        display: block;
+        border-radius: .5rem;
+        animation: floatImage 4s ease-in-out infinite;
+        ;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        padding-top: 40px;
+        cursor: default;
+        opacity: 0;
+        animation: slideRight 1s ease forwards;
+    }
+
+    .title:hover{
+        color:#ffffff;
+    }
+
+    .text {
+        color: #ffffff;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        opacity: 0;
+        cursor: default;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 0.1s;
+        animation-delay: calc(0.2s * var(--i));
+    }
+    .text  i {
+        transition: 0.5s ease;
+    }
+
+    .text  i:hover {
+        color: #00ffff;
+    }
+
+    .our-values{
+        color: #ffffff;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+    .our-values h1{
+        margin-left: 1rem;
+        padding:.3rem;
+        border-radius: .5rem;
+        font-weight: bolder;
+        cursor: default;
+        opacity: 0;
+        animation: slideRight 2s ease forwards;
+    }
+
+    .our-values div{
+        margin-top: 2rem;
+        margin-left: 3rem;
+        margin-right: 1rem;
+        padding: .8rem;
+        border-radius: .5rem;
+        opacity: 0;
+        cursor: default;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 0.1s;
+        animation-delay: calc(0.2s * var(--i));
+    }
+    .our-values p{
+        margin-top: .5rem;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        font-size: 21px;
+        color:rgb(255, 255, 255);
+    }
+
+    .our-story{
+        color: #ffffff;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+    .our-story h1{
+        margin-left: 1rem;
+        padding:.3rem;
+        border-radius:.5rem;
+        font-weight: bolder;
+        cursor: default;
+        opacity: 0;
+        animation: slideRight 2s ease forwards;
+    }
+    .our-story p{
+        margin-top: 2rem;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        font-size: 25px;
+        color:rgb(255, 255, 255);
+        background: #4c2f4f;
+        padding: 2rem;
+        border-radius: .5rem;
+        opacity: 0;
+        cursor: default;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 0.1s;
+        animation-delay: calc(0.2s * var(--i));
+    }
+    
+    .meet-our-team{
+        color: #ffffff;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+    .meet-our-team h1{
+        margin-left: 1rem;
+        padding:.3rem;
+        border-radius:.5rem;
+        font-weight: bolder;
+        cursor: default;
+        opacity: 0;
+        animation: slideRight 2s ease forwards;
+    }
+
+    .meet-our-team p{
+        margin-top: 2rem;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        font-size: 25px;
+        color:rgb(255, 255, 255);
+        background: #2f4f34;
+        padding: 2rem;
+        border-radius: .5rem;
+        opacity: 0;
+        cursor: default;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 0.1s;
+        animation-delay: calc(0.2s * var(--i));
+    }
+
+    .why-shop-with-us{
+        color: #ffffff;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+
+    .why-shop-with-us h1{
+        margin-left: 1rem;
+        padding:.3rem;
+        border-radius:.5rem;
+        font-weight: bolder;
+        cursor: default;
+        opacity: 0;
+        animation: slideRight 2s ease forwards;
+    }
+
+    .why-shop-with-us h2{
+        margin-left: 3rem;
+        padding:.3rem;
+        border-radius:.5rem;
+        font-weight: bolder;
+        cursor: default;
+        opacity: 0;
+        animation: slideRight 2s ease forwards;
+    }
+
+    .why-shop-with-us p{
+        margin-top: 2rem;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        font-size: 25px;
+        color:rgb(255, 255, 255);
+        background: #207601;
+        padding: 2rem;
+        border-radius: .5rem;
+        opacity: 0;
+        cursor: default;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 0.1s;
+        animation-delay: calc(0.2s * var(--i));
+    }
+
+    .join-our-community{
+        color: #ffffff;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+
+    .join-our-community h1{
+        margin-left: 1rem;
+        padding:.3rem;
+        border-radius:.5rem;
+        font-weight: bolder;
+        cursor: default;
+        opacity: 0;
+        animation: slideRight 2s ease forwards;
+    }
+
+    .join-our-community p{
+        margin-top: 2rem;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        font-size: 25px;
+        color:rgb(255, 255, 255);
+        background: #025e5e;
+        padding: 2rem;
+        border-radius: .5rem;
+        opacity: 0;
+        cursor: default;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 0.1s;
+        animation-delay: calc(0.2s * var(--i));
+    }
+
+    .contact-us{
+        color: #ffffff;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+
+    }
+
+    .contact-us h1{
+        margin-left: 1rem;
+        padding:.3rem;
+        border-radius:.5rem;
+        font-weight: bolder;
+        cursor: default;
+        opacity: 0;
+        animation: slideRight 2s ease forwards;
+    }
+
+    .contact-us p{
+        margin-top: 2rem;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        font-size: 25px;
+        color:rgb(255, 255, 255);
+        background: #4f492f;
+        padding: 2rem;
+        border-radius: .5rem;
+        opacity: 0;
+        cursor: default;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 0.1s;
+        animation-delay: calc(0.2s * var(--i));
+    }
+
+        /************media - responsive codes********/
+
+        @media(max-width: 878px) {
+            .about-cont{
+                margin-top: 12rem;
+            }
+        }
+
+</style>
+
+<!-- JS FILES -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="script.js"></script>
+
+</html>
